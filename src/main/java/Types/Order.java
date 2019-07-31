@@ -9,7 +9,7 @@ public class Order {
     private Date dataTime;
     private long orderNumber;
     private String customerName;
-    private ArrayList<OrderItem> item = new ArrayList<OrderItem>();
+    private ArrayList<OrderItem> item = new ArrayList<>();
 
     private int itemSize = -1;
 

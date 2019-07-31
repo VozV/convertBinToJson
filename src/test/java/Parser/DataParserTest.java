@@ -12,7 +12,6 @@ import java.util.Arrays;
 import java.util.Date;
 import java.util.HashMap;
 
-
 public class DataParserTest {
     public static byte[] fromHexString(String src) {
         byte[] biBytes = new BigInteger("10" + src.replaceAll("\\s", ""), 16).toByteArray();
@@ -26,10 +25,11 @@ public class DataParserTest {
                 "1D 00 0B 00 07 00 84 EB E0 AE AA AE AB 0C 00 02\n" +
                 "00 20 4E 0D 00 02 00 00 02 0E 00 02 00 40 9C");
 
+
         HashMap<String,Object> expectedOrder = new HashMap();
         expectedOrder.put("dateTime", new Date((long)1452421800 * 1000));
         expectedOrder.put("orderNumber",(long) 160004);
-        expectedOrder.put("customerName","ООО Ромашка");
+        expectedOrder.put("customerName", "ООО Ромашка");
         expectedOrder.put("name","Дырокол");
         expectedOrder.put("price",(long)20000);
         expectedOrder.put("quantity",(double)2.0);

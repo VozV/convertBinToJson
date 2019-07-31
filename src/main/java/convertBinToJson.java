@@ -4,7 +4,6 @@ import Types.Json;
 import java.io.*;
 import File.FileWriter;
 import File.FileReader;
-import java.nio.file.Paths;
 
 
 public class convertBinToJson {
