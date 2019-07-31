@@ -3,22 +3,15 @@ package Parser;
 
 import Types.Order;
 import Types.OrderItem;
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.junit.Assert;
 import org.junit.Test;
 
-import javax.print.attribute.standard.OrientationRequested;
 import java.io.UnsupportedEncodingException;
 import java.math.BigInteger;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.HashMap;
 
-import static org.junit.Assert.*;
 
 public class DataParserTest {
     public static byte[] fromHexString(String src) {
