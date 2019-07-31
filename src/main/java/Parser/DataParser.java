@@ -101,17 +101,6 @@ public class DataParser {
                     break;
             }
         }
-        /*System.out.println(data.getDataTime());
-        System.out.println(data.getOrderNumber());
-        System.out.println(data.getCustomerName());
-        for (OrderItem o: data.getItems()
-             ) {
-            System.out.println(o.getName());
-            System.out.println(o.getPrice());
-            System.out.println(o.getQuantity());
-            System.out.println(o.getSum());
-        }*/
-
         return data;
     }
 }
