@@ -1,16 +1,20 @@
 package Types;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.util.ArrayList;
+import java.util.Date;
 
 public class Order {
-    private long dataTime;
+    private Date dataTime;
     private long orderNumber;
     private String customerName;
     private ArrayList<OrderItem> item = new ArrayList<OrderItem>();
 
     private int itemSize = -1;
 
-    public long getDataTime() {
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss")
+    public Date getDataTime() {
         return dataTime;
     }
 
@@ -23,7 +27,7 @@ public class Order {
     }
 
     public void setDataTime(long dataTime) {
-        this.dataTime = dataTime;
+        this.dataTime = new Date(dataTime * 1000);
     }
 
     public void setOrderNumber(long orderNumber) {
